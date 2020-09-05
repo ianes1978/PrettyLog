@@ -57,3 +57,11 @@ export const log = prettyLog
 ...
 ```
 
+### PrettyLog methods
+
+prettyLog.logON() set parameter prettyLog.debug to true and send a message 
+
+prettyLog.logOFF() set parameter prettyLog.debug to false and send a message 
+
+u can change too directly prettyLog.debug to true or false to show or not the logs.
+
