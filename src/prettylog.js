@@ -22,9 +22,8 @@ export const prettyLog ={
          get: function() {
            if (this.debug){
            return window.console.log.bind(window.console, `%c${badge}%c%s`,this._defaultBadgeStyle+';'+badgeStyle, this._defaultMessageStyle+';'+messageStyle);
-           }else{
-             return function() {};
            }
+             return function() {};
          },
          configurable: true
        });
@@ -41,9 +40,8 @@ export const prettyLog ={
      get msg() {
        if (this.debug){
        return window.console.log.bind(window.console, '%cMsg:%c %s',this._defaultBadgeStyle+';background-color:gray','color:gray;font-family:Roboto;font-size:0.8rem;');
-       }else{
-         return function() {};
        }
+         return function() {};
      },
 
    }
