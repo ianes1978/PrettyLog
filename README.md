@@ -16,7 +16,7 @@ It is a simple logger for the Browser. It is  a wrap off console.log to style it
 ```
 npm i pretty-browser-log
 ```
-### Import globalStyle in your webcomponent
+### Use prettyLog in your project
 
 **import module:**
 ```
