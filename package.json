@@ -1,0 +1,27 @@
+{
+  "name": "prettylog",
+  "version": "1.0.0",
+  "description": "A lite wrapper of console.log of browser with styles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianes1978/PrettyLog.git"
+  },
+  "keywords": [
+    "log",
+    "console.log",
+    "styles",
+    "colors",
+    "label",
+    "ticket"
+  ],
+  "author": "Roberto Ianes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ianes1978/PrettyLog/issues"
+  },
+  "homepage": "https://github.com/ianes1978/PrettyLog#readme"
+}
