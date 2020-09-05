@@ -1,6 +1,6 @@
 {
-  "name": "prettylog",
-  "version": "1.0.0",
+  "name": "pretty-browser-log",
+  "version": "1.0.1",
   "description": "A lite wrapper of console.log of browser with styles",
   "main": "index.js",
   "scripts": {

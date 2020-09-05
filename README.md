@@ -14,18 +14,18 @@ It is a simple logger for the Browser. It is  a wrap off console.log to style it
 # Use it
 ### Project setup
 ```
-npm i prettyLog
+npm i pretty-browser-log
 ```
 ### Import globalStyle in your webcomponent
 
 **import module:**
 ```
-import {globalStyle} from 'lit-css-global-scope'
+import {prettyLog} from 'pretty-browser-log'
 ```
 **use it:**
 ```
 // where you want use 
-    import {prettyLog} from 'prettyLog'
+    import {prettyLog} from 'pretty-browser-log'
 
     log.addManyLogStyles([
         {name:'title',badge:'Title:',badgeStyle:'',messageStyle:'color:black;font-size:1rem;font-weight:bold;'},
