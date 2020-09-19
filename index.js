@@ -1,2 +1,4 @@
-import {prettyLog} from './src/prettylog.js';
-export {prettyLog};
+const {prettyLog} = require('./dist/prettyLog')
+console.log('commonjs')
+
+module.exports = {prettyLog};

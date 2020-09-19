@@ -1,5 +1,5 @@
 # Pretty Log
-It is a simple logger for the Browser. It is  a wrap off console.log to style it esier.
+It is a simple logger for the Browser and Nodej. It is  a wrap off console.log to style it esier.
 
 # Features:
 * Keeps the line number of the code logged.
@@ -7,8 +7,9 @@ It is a simple logger for the Browser. It is  a wrap off console.log to style it
 * Message styled
 * Turn On and turn Off
 * adder new styles
+* same styling Browser and NodeJs
 
-![screen](./images/logsExamples.PNG)
+ 
 
 
 # Use it
@@ -22,7 +23,8 @@ npm i pretty-browser-log
 ```
 import {prettyLog} from 'pretty-browser-log'
 ```
-**use it:**
+**use it on Browser:**
+![screen](./images/logsExamples.PNG)
 ```
 // where you want use 
     import {prettyLog} from 'pretty-browser-log'
@@ -56,6 +58,26 @@ export const log = prettyLog
 export const log = prettyLog
 ...
 ```
+**use it in NodeJS:**
+![screen](./images/logsExamples2.PNG)
+```
+// where you want use 
+const  {prettyLog: log}  = require('./index.js');
+
+log.addManyLogStyles([
+    {name:'title',badge:'Title:',badgeStyle:'',messageStyle:'color:black;font-size:1rem;font-weight:bold;'},
+    {name:'danger',badge:'Danger:',badgeStyle:'background-color:red;',messageStyle:'color:red'},
+    {name:'todo',badge:'ToDo:',badgeStyle:'background-color:red',messageStyle:'background-color:yellow;color:red;'},
+    {name:'action',badge:'Action:',badgeStyle:'background-color:#6b5b95',messageStyle:'color:#6b5b95'},
+    {name:'noLabel',badge:'',badgeStyle:'border: 0',messageStyle:'color:#4CD964; border: 1px solid;border-radius:0.4rem;padding:2px 6px'},
+    {name:'dot',badge:'  ',badgeStyle:'background-color:orange ;border-radius:50%',messageStyle:''},
+    {name:'success',badge:'Success:',badgeStyle:'background-color:#4CD964',messageStyle:'color:#4CD964;'},
+    // {name:'',badge:'',badgeStyle:'',messageStyle:''},
+])
+module.exports = {log};
+...
+```
+
 
 ### PrettyLog methods
 
